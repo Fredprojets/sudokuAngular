@@ -1,0 +1,8 @@
+.game-board {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 800px;
+  max-width: 800px;
+  gap: 5px;
+}
