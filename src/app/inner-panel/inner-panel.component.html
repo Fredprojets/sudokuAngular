@@ -1,3 +1,4 @@
 <div class="inner-grid">
-  <div *ngFor="let c of case | splitter" class="box">{{c | caseFix}}</div>
+  <app-case *ngFor="let case of cases | splitter; let i=index" [c]=case [s]="soluces![i] | splitter"></app-case>
+  <div></div>
 </div>

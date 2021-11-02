@@ -1,15 +1,16 @@
 <table width="100%">
   <tr>
     <td colspan="2">
-      <h1>Sudoku idle</h1>
+      <h1>Sudoku</h1>
     </td>
   </tr>
   <tr valign="top">
     <td width="50">
-      <app-upgrade></app-upgrade>
+      <app-upgrade (choix)="refresh($event)"></app-upgrade>
+      {{diff}}
     </td>
     <td width="100" height="200">
-      <app-grille></app-grille>
+      <app-grille [difficulte]="diff"></app-grille>
     </td>
   </tr>
   <tr>

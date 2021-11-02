@@ -6,7 +6,8 @@ import { GrilleComponent } from './grille/grille.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { InnerPanelComponent } from './inner-panel/inner-panel.component';
 import { SplitterPipe } from './inner-panel/splitter.pipe';
-import { CaseFixPipe } from './inner-panel/case-fix.pipe';
+import { CaseFixPipe } from './case/case-fix.pipe';
+import { CaseComponent } from './case/case.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CaseFixPipe } from './inner-panel/case-fix.pipe';
     UpgradeComponent,
     InnerPanelComponent,
     SplitterPipe,
-    CaseFixPipe
+    CaseFixPipe,
+    CaseComponent
   ],
   imports: [
     BrowserModule

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SudokuAngular';
+  public diff = '';
+  refresh(s: string): void {
+    this.diff = s;
+  }
 }

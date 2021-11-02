@@ -7,11 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InnerPanelComponent implements OnInit {
 
-  @Input() case= '';
+  @Input() cases= '';
+  @Input() soluces= '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

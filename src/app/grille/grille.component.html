@@ -1,3 +1,4 @@
 <div class="game-board">
-  <app-inner-panel *ngFor="let inner of innerPanel" [case]="inner"></app-inner-panel>
+  <app-inner-panel *ngFor="let inner of innerPanel; let i=index" [cases]="inner" [soluces]="innerSoluce![i]">
+  </app-inner-panel>
 </div>
